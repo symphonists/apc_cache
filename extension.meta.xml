@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="apc_cache" status="released" xmlns="http://symphony-cms.com/schemas/extension/1.0">
+	<name>APC Cache</name>
+	<description>Provides an APC Cache driver for use with Symphony CMS.</description>
+	<repo type="github">https://github.com/symphonists/apc_cache</repo>
+	<types>
+		<type>Other</type>
+	</types>
+	<authors>
+		<author>
+			<name github="brendo" symphony="brendo">Brendan Abbott</name>
+			<website>http://www.bloodbone.ws</website>
+		</author>
+	</authors>
+	<releases>
+		<release version="0.1" date="2014-03-25" min='2.4'>
+			* Initial release
+		</release>
+	</releases>
+</extension>
