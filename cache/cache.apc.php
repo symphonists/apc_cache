@@ -46,8 +46,7 @@
 		 * It is left to the user to define a unique hash for this data so that it can be
 		 * retrieved in the future. Optionally, a `$ttl` parameter can
 		 * be passed for this data. If this is omitted, it data is considered to be valid
-		 * forever. This function utilizes the Mutex class to act as a crude locking
-		 * mechanism.
+		 * forever.
 		 *
 		 * @see toolkit.Mutex
 		 * @param string $hash
@@ -61,7 +60,7 @@
 		 *  If an error occurs, this function will return false otherwise true
 		 */
 		public function write($hash, $data, $ttl = null) {
-			return apc_add($hash, $data, $ttl * 60);
+			return apc_store($hash, $data, $ttl * 60);
 		}
 
 		/**
